@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap');
+@import url("../css/animate.css");
+
+* {
+    --primary: #ffbd59;
+    --primary-trans: #ffbd5988;
+}
+
+.bg-main {
+    background-color: var(--primary);
+}
+
+.text-main {
+    color: var(--primary);
+}
+
+body {
+    font-family: 'Labrada', 'Times New Roman', Times, serif;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+#info-div, #info-div-2 {
+    animation-duration: 0.5s;
+    animation-name: slideInUp;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-fill-mode: forwards;
+}
+
+.br-50 {
+    border-radius: 50px;
+}
+
+.br-5 {
+    border-radius: 5px;
+}
+
+.extractor {
+    background-color: var(--primary-trans);
+    text-decoration-line: underline;
+    text-decoration-color: black;
+    text-decoration-style: dotted;
+    cursor: pointer;
+}

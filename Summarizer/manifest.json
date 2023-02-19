@@ -1,0 +1,20 @@
+{
+    "name": "Conspectus",
+    "description": "Tired of reading long webpages? Well don't worry, no more of it required. This extension creates a summary of the content that you provide as well marks those important sentences in the document.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "browser_action": {
+        "default_popup": "html/index.html"
+    },
+    "content_scripts": [
+    {
+        "matches": ["http://*/*","https://*/*"],
+        "css": ["css/main.css"],
+        "js": ["annotator.js"]
+    } ],
+    "icons": {
+        "16": "images/icont.png",
+        "48": "images/icont.png",
+        "128": "images/icont.png"
+    }
+}
